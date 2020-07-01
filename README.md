@@ -11,9 +11,11 @@ Once the button is clicked, the user will be presented with a single prompt aski
     4. Do you want your password to include numbers?
     5. Do you want your password to include special characters?
 
-If none of the above criteria is selected, an alert will be displayed requiring the user to choose at least one character type. Then, the user will once again be looped through the questions until the requirement is met.
+If none of the above criteria is selected, a message will be displayed requiring the user to choose at least one character type or, alternatively, click cancel to exit. If the user opts to proceed, he or she will once again be guided through the questions until the requirement is met.
 
-Finally, 
+Similarly, if the user enters a numerical value either less than 8 or greater than 128, he or she will receive a message requiring satisfaction of the requirement to continue or, alternatively, opt to click cancel to exit the generator. 
+
+Finally, once the user has selected his or her preferred criteria, a string of character selections is generated at random and displayed on the page. 
     
 
 ## Support
