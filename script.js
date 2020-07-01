@@ -1,13 +1,13 @@
-// Assignment code
+// Returns id associated with "Generate Password" button
 var generateBtn = document.getElementById("generate");
 
-// Declaring global variables
+// Declares global variables
 var lowerChar = "abcdefghijklmnopqrstuvwxyz";
 var upperChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var numberChar = "0123456789";
 var specialChar = "!@#$%^&*()_+~`|}{[]:;?',./-=";
 
-// Adds event listener to generate button
+// Adds event listener to "Generate Password" button
 generateBtn.addEventListener("click", displayPassword);
 
 // Displays password to the text area
@@ -23,12 +23,12 @@ function generatePassword() {
     var generate = "";
     var passwordSet = "";
 
-    var length = prompt("How long would you like your password to be? (Please select a numerical value between 8 and 128 characters)");
+    var length = prompt("How long would you like your password to be? (Please select a numerical value between 8 and 128).");
 
 // Assigns numerical value to length variable
     length = parseInt(length);
 
-// Establishes password length + confirms user-selections for each character 
+// Establishes password length + confirms user-selections for each character choice
     if (length >= 8 && length <= 128) { 
         var lowercase = confirm("Do you want your password to include lowercase letters?");
         var uppercase = confirm("Do you want your password to include uppercase letters?");
@@ -38,7 +38,7 @@ function generatePassword() {
 
 // Creates pop-up if incorrect length is entered
     else {
-        var resume = confirm("You must choose a numerical value between 8 and 128! \n Cancel to exit.")
+        var resume = confirm("You must choose a numerical value between 8 and 128. \nClick cancel to exit.")
         if (resume) {
             return generatePassword();
         }
@@ -47,14 +47,14 @@ function generatePassword() {
 
 // Creates pop-up if no characters are selected
     if (!lowercase && !uppercase && !number && !special) {
-        var resume = confirm("You must choose at least one character option! \n Cancel to exit.")
+        var resume = confirm("You must choose at least one character option. \nClick cancel to exit.")
         if (resume) {
             return generatePassword();
         }
         return ''
     }
 
-// Sets selected characters to their corresponding variables
+// Adds selected characters to their corresponding variables
     if (lowercase === true) {
         generate += lowerChar
         passwordSet += returnChar(lowerChar)
@@ -79,7 +79,7 @@ function generatePassword() {
     return passwordSet;
 }
 
-// Assigns characters at random
+// Returns characters at random
 function returnChar(str) {
     return str[Math.floor(Math.random() * str.length)]
 }
