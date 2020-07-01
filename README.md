@@ -17,7 +17,6 @@ Similarly, if the user enters a numerical value either less than 8 or greater th
 
 Finally, once the user has selected his or her preferred criteria, a string of character selections is generated at random and displayed on the page. 
     
-
 ## Support
 For questions, comments or concerns regarding the Password-Generator application, please email barrettpope94@gmail.com
 
