@@ -18,7 +18,8 @@ Password-Generator is an interactive application that generates a unique passwor
 Once the user has responded to each of the prompts, a string of character selections is generated at random and displayed on the page. 
 
 ## Visuals
-
+![](Assets/pw1.png)
+![](Assets/pw2.png)
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
